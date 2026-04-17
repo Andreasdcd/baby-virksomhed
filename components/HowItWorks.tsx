@@ -26,29 +26,29 @@ export default function HowItWorks() {
     <section id="saadan-foregaar-det" className="snap-section bg-white">
       <div className="section-container">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-text-primary font-heading">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 text-text-primary font-heading">
               Sådan foregår det
             </h2>
-            <p className="text-xl md:text-2xl text-text-primary/60">
+            <p className="text-lg md:text-xl text-text-primary/60">
               Uanset om du kommer på hold eller til individuel vejledning, kan du forvente:
             </p>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-background rounded-xl p-8 shadow-sm flex items-start gap-6 hover:shadow-md transition-all"
+                className="bg-background rounded-xl p-6 shadow-sm flex items-start gap-4 hover:shadow-md transition-all"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary font-semibold text-lg">
+                <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-semibold">
                   {index + 1}
                 </div>
                 <div>
-                  <h3 className="text-2xl mb-2 text-text-primary font-heading">
+                  <h3 className="text-xl mb-1 text-text-primary font-heading">
                     {feature.title}
                   </h3>
-                  <p className="text-text-primary/60 leading-relaxed text-lg">
+                  <p className="text-text-primary/60 leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

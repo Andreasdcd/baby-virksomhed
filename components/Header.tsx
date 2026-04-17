@@ -44,7 +44,7 @@ export default function Header() {
 
       {/* Full-screen Dropdown Menu */}
       <div
-        className={`fixed inset-0 top-[73px] bg-white transition-all duration-200 ease-in-out ${
+        className={`fixed inset-0 top-[73px] bg-white z-40 transition-opacity duration-200 ease-in-out ${
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
