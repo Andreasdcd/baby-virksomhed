@@ -1,7 +1,16 @@
 export default function Hero() {
   return (
-    <section className="snap-section bg-gradient-to-b from-background to-white">
-      <div className="section-container">
+    <section className="snap-section relative bg-gradient-to-b from-background to-white overflow-hidden">
+      {/* Baggrundsbillede */}
+      <div className="absolute inset-0 opacity-10">
+        <img
+          src="/anna.png"
+          alt="Baby background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      <div className="section-container relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Overskrift */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-text-primary font-heading">
@@ -17,10 +26,10 @@ export default function Hero() {
           {/* CTA knapper */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="#kontakt" className="btn-primary w-full sm:w-auto text-center">
-              Book en plads
-            </a>
-            <a href="#kontakt" className="btn-secondary w-full sm:w-auto text-center">
               Kontakt mig
+            </a>
+            <a href="/om-mig" className="btn-secondary w-full sm:w-auto text-center">
+              Om mig
             </a>
           </div>
 

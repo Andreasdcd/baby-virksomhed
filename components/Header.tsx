@@ -42,40 +42,36 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Full-screen Dropdown Menu */}
-      <div
-        className={`fixed inset-0 top-[73px] bg-white z-40 transition-opacity duration-200 ease-in-out ${
-          isMenuOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
-      >
-        <nav className="section-container py-8">
-          <div className="flex flex-col gap-6">
-            <Link
-              href="/"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-3xl font-heading text-text-primary hover:text-primary transition-colors py-4 border-b border-text-primary/10"
-            >
-              Hjem
-            </Link>
-            <Link
-              href="/om-mig"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-3xl font-heading text-text-primary hover:text-primary transition-colors py-4 border-b border-text-primary/10"
-            >
-              Om mig
-            </Link>
-            <Link
-              href="/kontakt"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-3xl font-heading text-text-primary hover:text-primary transition-colors py-4 border-b border-text-primary/10"
-            >
-              Kontakt
-            </Link>
-          </div>
-        </nav>
-      </div>
+      {/* Full-screen Dropdown Menu with solid background */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 top-[73px] bg-white z-40 animate-fadeIn">
+          <nav className="section-container py-8">
+            <div className="flex flex-col gap-6">
+              <Link
+                href="/"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-3xl font-heading text-text-primary hover:text-primary transition-colors py-4 border-b border-text-primary/10"
+              >
+                Hjem
+              </Link>
+              <Link
+                href="/om-mig"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-3xl font-heading text-text-primary hover:text-primary transition-colors py-4 border-b border-text-primary/10"
+              >
+                Om mig
+              </Link>
+              <Link
+                href="#kontakt"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-3xl font-heading text-text-primary hover:text-primary transition-colors py-4 border-b border-text-primary/10"
+              >
+                Kontakt
+              </Link>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
