@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Baby Vejledning & Tumlehold | Tryg støtte til dig og din baby",
   description: "Jeg tilbyder vejledning og babytumlehold i rolige og nærværende rammer. Få hjælp til favoritside, skævt kranie, sanseudfordringer og trivsel. Små hold og individuel sparring.",
   keywords: ["baby tumlehold", "baby vejledning", "favoritside baby", "skævt kranie", "sanseintegration", "baby trivsel", "sansemotorisk udvikling"],
-  authors: [{ name: "[Virksomhedens navn]" }],
+  authors: [{ name: "Anna Sundby Jensen" }],
   openGraph: {
     title: "Baby Vejledning & Tumlehold | Tryg støtte til dig og din baby",
     description: "Jeg tilbyder vejledning og babytumlehold i rolige og nærværende rammer.",

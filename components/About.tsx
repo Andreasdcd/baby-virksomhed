@@ -22,8 +22,8 @@ export default function About() {
 
               <div className="space-y-4 text-neutral-700 leading-relaxed">
                 <p>
-                  Jeg hedder <strong>[NAVN]</strong> og har arbejdet med babyer og små børn i [X] år.
-                  Min baggrund er inden for [UDDANNELSE/FAGOMRÅDE], og jeg har en særlig interesse
+                  Jeg hedder <strong>Anna Sundby Jensen</strong> og har arbejdet med babyer og små børn i flere år.
+                  Min baggrund er som uddannet ergoterapeut, og jeg har en særlig interesse
                   for sansemotorisk udvikling og trivsel hos de mindste.
                 </p>
 
@@ -41,8 +41,9 @@ export default function About() {
 
                 <div className="mt-8 pt-6 border-t border-warm-300">
                   <p className="text-sm text-neutral-600">
-                    <strong>Baggrund:</strong> [Uddannelse/certifikater/kurser]<br/>
-                    <strong>Erfaring:</strong> [Tidligere jobs eller relevant erfaring]
+                    <strong>Baggrund:</strong> Uddannet Ergoterapeut<br/>
+                    <strong>Erfaring:</strong> Arbejdet på børneområdet i flere år<br/>
+                    <strong>Nuværende:</strong> Ansat hos Modu, hvor jeg udvikler open-ended stimulerende legetøj til børn i mange aldre
                   </p>
                 </div>
               </div>
