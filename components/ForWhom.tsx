@@ -9,14 +9,14 @@ export default function ForWhom() {
   ];
 
   return (
-    <section id="for-hvem" className="section-padding bg-background">
+    <section id="for-hvem" className="snap-section bg-background">
       <div className="section-container">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-text-primary font-heading">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-text-primary font-heading">
               Er det noget for dig?
             </h2>
-            <p className="text-lg text-text-primary/70">
+            <p className="text-xl md:text-2xl text-text-primary/60">
               Jeg hjælper familier i mange forskellige situationer. Måske genkender du dig i en af disse:
             </p>
           </div>
@@ -25,9 +25,9 @@ export default function ForWhom() {
             {situations.map((situation, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 shadow-sm"
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all"
               >
-                <p className="text-text-primary/80 leading-relaxed">
+                <p className="text-text-primary/60 leading-relaxed text-lg">
                   {situation}
                 </p>
               </div>

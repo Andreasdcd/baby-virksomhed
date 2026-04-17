@@ -1,13 +1,13 @@
 export default function PracticalInfo() {
   return (
-    <section id="praktisk-info" className="section-padding bg-warm-50">
+    <section id="praktisk-info" className="snap-section bg-background">
       <div className="section-container">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-neutral-800">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-text-primary font-heading">
               Praktisk information
             </h2>
-            <p className="text-lg text-neutral-600">
+            <p className="text-xl md:text-2xl text-text-primary/60">
               Her finder du de praktiske detaljer om hold og vejledning
             </p>
           </div>
@@ -15,33 +15,33 @@ export default function PracticalInfo() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Baby tumlehold */}
             <div className="card">
-              <h3 className="text-2xl mb-6 text-neutral-800 font-medium">
+              <h3 className="text-3xl mb-6 text-text-primary font-heading">
                 Baby tumlehold
               </h3>
 
-              <div className="space-y-4 text-neutral-700">
+              <div className="space-y-4 text-text-primary/60 text-lg">
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Sted</p>
+                  <p className="font-medium text-text-primary mb-1">Sted</p>
                   <p>[Adresse eller navn på lokation]</p>
                 </div>
 
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Hvornår</p>
+                  <p className="font-medium text-text-primary mb-1">Hvornår</p>
                   <p>[Dag og tidspunkt, fx "Tirsdage kl. 10-11"]</p>
                 </div>
 
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Holdstørrelse</p>
+                  <p className="font-medium text-text-primary mb-1">Holdstørrelse</p>
                   <p>Maks. [antal] familier per hold</p>
                 </div>
 
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Pris</p>
+                  <p className="font-medium text-text-primary mb-1">Pris</p>
                   <p>[Pris] kr. for [antal] gange</p>
                 </div>
 
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Alder</p>
+                  <p className="font-medium text-text-primary mb-1">Alder</p>
                   <p>Babyer fra [alder] til [alder]</p>
                 </div>
               </div>
@@ -49,33 +49,33 @@ export default function PracticalInfo() {
 
             {/* Individuel vejledning */}
             <div className="card">
-              <h3 className="text-2xl mb-6 text-neutral-800 font-medium">
+              <h3 className="text-3xl mb-6 text-text-primary font-heading">
                 Individuel vejledning
               </h3>
 
-              <div className="space-y-4 text-neutral-700">
+              <div className="space-y-4 text-text-primary/60 text-lg">
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Hvor</p>
+                  <p className="font-medium text-text-primary mb-1">Hvor</p>
                   <p>Hos jer eller [lokation]</p>
                 </div>
 
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Varighed</p>
+                  <p className="font-medium text-text-primary mb-1">Varighed</p>
                   <p>[Antal] min per samtale</p>
                 </div>
 
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Pris</p>
+                  <p className="font-medium text-text-primary mb-1">Pris</p>
                   <p>[Pris] kr. per konsultation</p>
                 </div>
 
                 <div>
-                  <p className="font-medium text-neutral-800 mb-1">Booking</p>
+                  <p className="font-medium text-text-primary mb-1">Booking</p>
                   <p>Kontakt mig for at aftale tid</p>
                 </div>
 
                 <div>
-                  <p className="text-sm text-neutral-600 italic mt-4">
+                  <p className="text-sm text-text-primary/50 italic mt-4">
                     Vi tager en uforpligtende snak om dine behov,
                     før vi booker en tid.
                   </p>
@@ -85,8 +85,8 @@ export default function PracticalInfo() {
           </div>
 
           {/* Kontakt info box */}
-          <div className="mt-12 bg-sage-100 rounded-xl p-8 text-center">
-            <p className="text-neutral-700 mb-4">
+          <div className="mt-12 bg-primary/10 rounded-xl p-8 text-center">
+            <p className="text-text-primary/70 mb-4 text-lg">
               Har du spørgsmål til praktiske detaljer eller vil du høre mere?
             </p>
             <a href="#kontakt" className="btn-primary inline-block">

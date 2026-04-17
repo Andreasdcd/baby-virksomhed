@@ -23,14 +23,14 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="saadan-foregaar-det" className="section-padding bg-warm-50">
+    <section id="saadan-foregaar-det" className="snap-section bg-white">
       <div className="section-container">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl mb-4 text-neutral-800">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-text-primary font-heading">
               Sådan foregår det
             </h2>
-            <p className="text-lg text-neutral-600">
+            <p className="text-xl md:text-2xl text-text-primary/60">
               Uanset om du kommer på hold eller til individuel vejledning, kan du forvente:
             </p>
           </div>
@@ -39,16 +39,16 @@ export default function HowItWorks() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl p-8 shadow-sm flex items-start gap-6"
+                className="bg-background rounded-xl p-8 shadow-sm flex items-start gap-6 hover:shadow-md transition-all"
               >
-                <div className="flex-shrink-0 w-10 h-10 bg-sage-100 rounded-full flex items-center justify-center text-sage-300 font-semibold">
+                <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary font-semibold text-lg">
                   {index + 1}
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2 text-neutral-800 font-medium">
+                  <h3 className="text-2xl mb-2 text-text-primary font-heading">
                     {feature.title}
                   </h3>
-                  <p className="text-neutral-600 leading-relaxed">
+                  <p className="text-text-primary/60 leading-relaxed text-lg">
                     {feature.description}
                   </p>
                 </div>

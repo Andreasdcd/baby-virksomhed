@@ -33,14 +33,14 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="section-padding bg-warm-100">
+    <section id="faq" className="snap-section bg-white">
       <div className="section-container">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl mb-4 text-neutral-800">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-text-primary font-heading">
               Ofte stillede spørgsmål
             </h2>
-            <p className="text-lg text-neutral-600">
+            <p className="text-xl md:text-2xl text-text-primary/60">
               Her finder du svar på nogle af de spørgsmål, jeg ofte får
             </p>
           </div>
@@ -49,22 +49,22 @@ export default function FAQ() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-sm overflow-hidden"
+                className="bg-background rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all"
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-warm-50 transition-colors"
+                  className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-background/80 transition-colors"
                 >
-                  <span className="text-lg font-medium text-neutral-800 pr-4">
+                  <span className="text-xl font-medium text-text-primary pr-4">
                     {faq.question}
                   </span>
-                  <span className="text-2xl text-sage-300 flex-shrink-0">
+                  <span className="text-3xl text-primary flex-shrink-0 font-light">
                     {openIndex === index ? "−" : "+"}
                   </span>
                 </button>
 
                 {openIndex === index && (
-                  <div className="px-8 pb-6 text-neutral-700 leading-relaxed">
+                  <div className="px-8 pb-6 text-text-primary/60 leading-relaxed text-lg">
                     {faq.answer}
                   </div>
                 )}

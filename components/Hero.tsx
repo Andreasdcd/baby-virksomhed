@@ -1,15 +1,15 @@
 export default function Hero() {
   return (
-    <section className="section-padding pt-32 pb-20 bg-gradient-to-b from-background to-white">
+    <section className="snap-section bg-gradient-to-b from-background to-white">
       <div className="section-container">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Overskrift */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight text-text-primary font-heading">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl mb-8 leading-tight text-text-primary font-heading">
             Tryg støtte til dig og din baby
           </h1>
 
           {/* Undertekst */}
-          <p className="text-lg md:text-xl mb-8 leading-relaxed text-text-primary/80">
+          <p className="text-xl md:text-2xl mb-12 leading-relaxed text-text-primary/70">
             Jeg tilbyder vejledning og babytumlehold i rolige og nærværende rammer.
             Her får I støtte til at forstå barnets signaler og udvikle jer sammen.
           </p>

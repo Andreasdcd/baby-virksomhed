@@ -13,9 +13,9 @@ export default function Header() {
           {/* Logo/Brand */}
           <Link
             href="/"
-            className="text-xl font-heading font-medium text-text-primary hover:text-primary transition-colors"
+            className="text-2xl font-heading font-semibold text-text-primary hover:text-primary transition-colors"
           >
-            [Virksomhedens navn]
+            Babysteps
           </Link>
 
           {/* Desktop Menu */}
