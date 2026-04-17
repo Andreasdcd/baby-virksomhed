@@ -89,7 +89,7 @@ export default function PracticalInfo() {
             <p className="text-text-primary/70 mb-3">
               Har du spørgsmål til praktiske detaljer eller vil du høre mere?
             </p>
-            <a href="#kontakt" className="btn-primary inline-block">
+            <a href="/kontakt" className="btn-primary inline-block">
               Kontakt mig
             </a>
           </div>

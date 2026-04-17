@@ -62,7 +62,7 @@ export default function Header() {
                 Om mig
               </Link>
               <Link
-                href="#kontakt"
+                href="/kontakt"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-3xl font-heading text-text-primary hover:text-primary transition-colors py-4 border-b border-text-primary/10"
               >

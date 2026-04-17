@@ -25,7 +25,7 @@ export default function Hero() {
 
           {/* CTA knapper */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#kontakt" className="btn-primary w-full sm:w-auto text-center">
+            <a href="/kontakt" className="btn-primary w-full sm:w-auto text-center">
               Kontakt mig
             </a>
             <a href="/om-mig" className="btn-secondary w-full sm:w-auto text-center">
