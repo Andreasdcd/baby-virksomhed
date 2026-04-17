@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Baby Vejledning & Tumlehold - Hjemmeside
 
-## Getting Started
+En moderne, varm og professionel hjemmeside til en virksomhed, der arbejder med babyer og forældre.
 
-First, run the development server:
+## Om projektet
+
+Hjemmesiden er bygget som en single-page landing page med fokus på:
+- Trygt og nærværende udtryk
+- Tydelig information om ydelser
+- Let kontakt og booking
+- Mobilvenlig design
+- Skandinavisk, blødt design
+
+## Kom i gang
+
+### Installation
+
+```bash
+npm install
+```
+
+### Start development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Åbn http://localhost:3000 i din browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build til produktion
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Projektstruktur
 
-To learn more about Next.js, take a look at the following resources:
+```
+baby-virksomhed/
+├── app/
+│   ├── layout.tsx          # Root layout med SEO metadata
+│   ├── page.tsx            # Hovedside (samler alle komponenter)
+│   └── globals.css         # Global styling
+├── components/
+│   ├── Hero.tsx
+│   ├── Services.tsx
+│   ├── ForWhom.tsx
+│   ├── HowItWorks.tsx
+│   ├── About.tsx
+│   ├── PracticalInfo.tsx
+│   ├── FAQ.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   └── Navigation.tsx     (optional)
+└── public/                # Billeder placeres her
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Hvad skal du redigere?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Footer.tsx (PRIORITET 1)
+Erstat placeholders:
+- [Virksomhedens navn]
+- [email@example.dk]
+- [+45 12 34 56 78]
+- [CVR: 12345678]
+- [@profil] (Instagram)
 
-## Deploy on Vercel
+### 2. About.tsx
+- Tilføj dit navn, baggrund og erfaring
+- Tilføj profilbillede i `public/images/`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. PracticalInfo.tsx
+- Udfyld adresse, tidspunkter, priser
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. Contact.tsx
+- Opdater kontaktinfo
+
+### 5. layout.tsx
+- Opdater SEO metadata (title, description)
+
+## Billeder
+
+Placer billeder i `public/images/` og reference dem som `/images/filnavn.jpg`
+
+For profilbillede i About-sektionen:
+```tsx
+<Image src="/images/profil.jpg" alt="Dit navn" width={600} height={750} />
+```
+
+## Design og farver
+
+Farveskema:
+- Warm beige: #FAFAF8, #F5F1ED, #F4E8E3
+- Sage green: #D4D9CC, #B8C2AD (accent)
+- Neutral: #3A3A3A, #5A5A5A
+
+## Kontaktformular
+
+Formularen er klar til integration med:
+- Formspree (anbefalet - gratis)
+- Web3Forms
+- EmailJS
+
+Opdater `handleSubmit` funktionen i `Contact.tsx` med dit Form ID.
+
+## SEO
+
+Siden har grundlæggende SEO:
+- Meta tags (title, description, keywords)
+- Open Graph tags
+- Dansk sprog
+- Semantisk HTML
+
+## Deployment
+
+### Vercel (anbefalet - gratis)
+
+1. Push til GitHub
+2. Gå til vercel.com
+3. Importer repository
+4. Deploy
+
+### Andre muligheder
+- Netlify
+- Railway
+- Egen server med Node.js
+
+## Teknisk stack
+
+- Next.js 14+ (App Router)
+- TypeScript
+- Tailwind CSS
+- Inter font (Google Fonts)
+
+## Support
+
+- Next.js Docs: https://nextjs.org/docs
+- Tailwind CSS Docs: https://tailwindcss.com/docs
+
+---
+
+**God fornøjelse med din nye hjemmeside!**
