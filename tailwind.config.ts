@@ -19,8 +19,8 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Brown', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-        heading: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['var(--font-montserrat)', 'sans-serif'],
+        heading: ['var(--font-cormorant)', 'serif'],
       },
       borderRadius: {
         'button': '14.7px',
