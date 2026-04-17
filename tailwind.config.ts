@@ -19,7 +19,7 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['var(--font-montserrat)', 'sans-serif'],
+        sans: ['var(--font-poppins)', 'sans-serif'],
         heading: ['var(--font-cormorant)', 'serif'],
       },
       borderRadius: {

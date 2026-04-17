@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import { Cormorant_Garamond, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -10,10 +10,10 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const montserrat = Montserrat({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="da" className={`${montserrat.variable} ${cormorant.variable} scroll-smooth`}>
+    <html lang="da" className={`${poppins.variable} ${cormorant.variable} scroll-smooth`}>
       <body className="min-h-full antialiased font-sans">
         <Header />
         {children}

@@ -13,16 +13,18 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  height: 100%;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, sans-serif;
   overflow-x: hidden;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 h1, h2, h3, h4, h5, h6 {
